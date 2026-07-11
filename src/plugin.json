@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "panel",
+  "name": "AlphaInfo Regime Detection",
+  "id": "alphainfo-regimedetection-panel",
+  "info": {
+    "keywords": [
+      "panel",
+      "regime-change",
+      "anomaly",
+      "anomaly-detection",
+      "change-detection",
+      "alert-fatigue",
+      "time-series",
+      "sre",
+      "observability",
+      "incident-response",
+      "structural-analysis",
+      "alphainfo"
+    ],
+    "description": "Classify any time series as stable / transition / unstable using structural analysis — see regime changes before fixed thresholds fire. Verdict badge, regime overlay, optional per-window deep timeline showing where the change happened, and a live quota footer.",
+    "author": {
+      "name": "alphainfo.io",
+      "url": "https://alphainfo.io"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://alphainfo.io"
+      },
+      {
+        "name": "API Guide",
+        "url": "https://alphainfo.io/v1/guide"
+      },
+      {
+        "name": "Get a free API key",
+        "url": "https://alphainfo.io/register"
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "Regime break with deep timeline, 5D fingerprint and reading",
+        "path": "img/screenshot-regime-break-deep.png"
+      },
+      {
+        "name": "Healthy series classified stable",
+        "path": "img/screenshot-stable.png"
+      }
+    ],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=12.3.0",
+    "plugins": []
+  }
+}
